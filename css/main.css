@@ -4,22 +4,50 @@ body {
 
 .main {
     background-color: white;
-    margin-top: 110px;
-    padding-left: 100px;
-    height: 500px;
-    min-width: 1200px;
+}
+
+.ring {
+    margin: 0 auto;
+    height: 540px;
+    width: 1400px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     z-index: 1;
 }
 
-.ryu {
-    float: left;
+.directions {
+    margin-top: 110px;
+    background-color: lightblue;
+    padding: 6px 100px 6px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.ryu, .hulk-ryu {
     width: 659px;
     height: 494px;
 }
 
+.ryu {
+    float: left;
+}
+
+.hulk-ryu {
+    float: right;
+}
+
 .ryu-image, .hadouken {
     background-repeat: no-repeat;
+}
+
+.flipped {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 .ryu-image {
@@ -27,7 +55,7 @@ body {
     height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 }
 
@@ -37,6 +65,7 @@ body {
 
 .ryu-still {
     background-image: url('../images/ryu-standing-still.png');
+    filter: hue-rotate(90deg);
 }
 
 .ryu-throwing {
@@ -55,6 +84,5 @@ body {
     display: none;
     position: absolute;
     top: 168px;
-    left: 570px;
     z-index: 10;
 }

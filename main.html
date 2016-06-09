@@ -3,18 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="directions">
+        Click fighter to fire.  Type 'x' to look cool.
+    </div>
     <div class="main">
-        <div class="ryu">
-            <div class="ryu-image ryu-still"></div>
-            <div class="ryu-image ryu-ready"></div>
-            <div class="ryu-image ryu-throwing"></div>
-            <div class="ryu-image ryu-cool"></div>
+        <div class="ring">
+            <div class="ryu">
+                <div class="ryu-image ryu-still"></div>
+                <div class="ryu-image ryu-ready"></div>
+                <div class="ryu-image ryu-throwing"></div>
+                <div class="ryu-image ryu-cool"></div>
+            </div>
+            <div class="hulk-ryu">
+                <div class="flipped ryu-image ryu-still"></div>
+                <div class="flipped ryu-image ryu-ready"></div>
+                <div class="flipped ryu-image ryu-throwing"></div>
+                <div class="flipped ryu-image ryu-cool"></div>
+            </div>
+            <div class="hadouken"></div>
         </div>
-        <div class="hadouken"></div>
     </div>
     <audio id="hadouken-sound" src="sound/hadouken.mp3">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
